@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>tableview</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    self.tableview.delegate           = self;
+    self.tableview.dataSource         = self;
+    self.tableview.estimatedRowHeight = 44.0;
+    self.tableview.rowHeight          = UITableViewAutomaticDimension;
+    self.tableview.tableFooterView    = [[UIView alloc] initWithFrame:CGRectZero];
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>E63E71DD-D0DD-4C78-96D6-07E098A30248</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>tableViewAutoLayout</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
