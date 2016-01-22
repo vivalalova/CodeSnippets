@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>imagePickerController camera</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>#pragma mark - UIImagePickerControllerDelegate
+@property (nonatomic, strong) UIImagePickerController *imagePickerController;
+
+- (IBAction)cameraBtnPressed:(UIButton *)sender {
+    self.imagePickerController = [[UIImagePickerController alloc] init];
+    self.imagePickerController.sourceType = UIImagePickerControllerSourceTypeCamera;
+    self.imagePickerController.allowsEditing = NO;
+    self.imagePickerController.delegate = self;
+    [self presentViewController:self.imagePickerController animated:YES completion:^{
+    }];
+}
+
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary &lt;NSString *, id&gt; *)info {
+    UIImage *image = [info objectForKey:UIImagePickerControllerEditedImage]?[info objectForKey:UIImagePickerControllerEditedImage]:[info objectForKey:UIImagePickerControllerOriginalImage];
+    
+    //save to album
+    UIImageWriteToSavedPhotosAlbum(image, self, @selector(image:didFinishSavingWithError:contextInfo:), nil);
+    
+    [self imagePickerControllerDidCancel:self.imagePickerController];
+}
+
+- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
+    [self.imagePickerController dismissViewControllerAnimated:YES completion:^{
+        self.imagePickerController = nil;
+    }];
+}
+
+- (void)image:(UIImage *)image didFinishSavingWithError:(NSError *)error contextInfo:(void *)contextInfo{
+    // 處理寫入圖像程序結束時的情況
+    if (!error)
+        NSLog(@"Image written to photo album");
+    else
+        NSLog(@"Error writing to photo album: %@", [error localizedDescription]);
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>3F030B4D-F208-46CB-B336-6DD93D150911</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>imagePickerController camera</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
