@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>lazy</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    private lazy var _&lt;#varName#&gt; : &lt;#type#&gt; = {
+            let _&lt;#varName#&gt; = &lt;#type#&gt;()
+            return _&lt;#varName#&gt;
+    }()
+
+    var &lt;#varName#&gt;:&lt;#type#&gt; {
+        get{
+            return _&lt;#varName#&gt;
+        }
+        set(newValue){
+            _&lt;#varName#&gt; = newValue
+        }
+    }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>A75249B9-A4DF-4842-9810-4D1E6830E2D4</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>lazy init with getter&amp;setter</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>lazy init with getter&amp;setter</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
