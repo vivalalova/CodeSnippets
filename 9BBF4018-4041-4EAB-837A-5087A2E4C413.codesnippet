@@ -9,16 +9,16 @@
 		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>+ (id)sharedInstance {
-    static &lt;#Class#&gt; *sharedInstance = nil;
+	<string>+ (instancetype)shareInstance {
+    static &lt;#type#&gt; *instance = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&amp;onceToken, ^{
-        sharedInstance = [[self alloc] init];
+        instance = [[self alloc] init];
     });
-    return sharedInstance;
+    return instance;
 }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>406D3A2D-D6BC-4550-BDAA-B0E275DE9DC2</string>
+	<string>9BBF4018-4041-4EAB-837A-5087A2E4C413</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
@@ -28,6 +28,6 @@
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>0</integer>
+	<integer>2</integer>
 </dict>
 </plist>
