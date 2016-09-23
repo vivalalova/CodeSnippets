@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>testAsync</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (void)&lt;#testAsync#&gt;{
+    XCTestExpectation *expectation = [self expectationWithDescription:@"&lt;#testAsync#&gt;"];
+    
+    [expectation fulfill];
+    
+    [self waitForExpectationsWithTimeout:5 handler:^(NSError *error) {
+        if (error) {
+            NSLog(@"Error: %@", error);
+        }
+        XCTAssertNil(error);
+    }];
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>A5354BA9-9DB6-4402-872E-808C7BD2C841</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>testAsync</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>testAsync</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
