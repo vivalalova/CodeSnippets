@@ -6,10 +6,10 @@
 	<string>mark</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassImplementation</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>//MARK: &lt;#title#&gt;</string>
+	<string>//MARK: - &lt;#title#&gt;</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>84B3A71C-B13D-43A4-9982-40F657266C22</string>
 	<key>IDECodeSnippetLanguage</key>
