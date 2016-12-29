@@ -3,24 +3,27 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>todo</string>
+	<string>singleton</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
+		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>//TODO: - &lt;#String#&gt;</string>
+	<string>    static let shared: &lt;#class#&gt; = {
+        let instance = &lt;#class#&gt;()
+        return instance
+    }()</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>8DA2F3C3-00CD-4DE8-A003-43D76430CBF8</string>
+	<string>00FAD3CC-6AB4-407C-B0F2-D654C103F15C</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>todo</string>
+	<string>singleton</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>todo</string>
+	<string>singleton</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>
